@@ -7,4 +7,4 @@
 # Screenshots showing your postman requests and the output from the API.
 # Screenshots of your database to prove that data is being persisted.
 # Screenshot of your test results, including coverage report.
-# Link to Jira Board - https://jbolt.atlassian.net/jira/software/projects/JDF/boards/2/backlog (add Reece)
+# Link to Jira Board - https://jbolt.atlassian.net/jira/software/projects/JDF/boards/2/backlog
