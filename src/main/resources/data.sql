@@ -1,17 +1,15 @@
 DROP TABLE IF EXISTS `car_parking`;
 
 CREATE TABLE car_parking( 
-id long AUTO_INCREMENT, 
-number_plate VARCHAR(10) NOT NULL,
-make VARCHAR(10) NOT NULL,
-model VARCHAR(10) NOT NULL,
-colour VARCHAR(25) NOT NULL,
+id int AUTO_INCREMENT, 
+number_plate VARCHAR(50) NOT NULL,
+make VARCHAR(50) NOT NULL,
+model VARCHAR(50) NOT NULL,
+colour VARCHAR(50) NOT NULL,
 price float NOT NULL,
 paid boolean NOT NULL,
 PRIMARY KEY (id)
 );
-
-use carparkingdb;
 
 
 INSERT INTO `car_parking` (`number_plate`, `make`, `model`, `colour`, `price`, `paid`) VALUES ('AA11 AAA', 'Brand1', 'Car1', 'Colour1', 11.11, false);

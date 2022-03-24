@@ -16,7 +16,7 @@ public class ServiceDB {
 	}
 	// Create New Entry
 	public boolean newSession(CarParking session) {
-		repo.save(session); // Takes in entity, puts it in DB
+		repo.save(session);
 		return true;
 	}
 	// Create Preset Entries
