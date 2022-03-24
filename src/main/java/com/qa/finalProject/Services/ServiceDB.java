@@ -19,12 +19,6 @@ public class ServiceDB {
 		repo.save(session);
 		return true;
 	}
-	// Create Preset Entries
-		/*public boolean createSetBooking(CarParking sessions) {
-			repo.save(sessions);
-			return true;
-		 // Preset data is being added via data.sql and the last line in application.properties 
-		  }*/
 		
 	// Find Entry by ID
 	public CarParking findById(long id) {

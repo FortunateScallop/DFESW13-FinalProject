@@ -119,7 +119,7 @@ public class CarParking {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(colour, id, make, model, number_plate, paid, price);
+		return Objects.hash(colour, make, model, number_plate, paid, price);
 	}
 
 	@Override
@@ -131,7 +131,7 @@ public class CarParking {
 		if (getClass() != obj.getClass())
 			return false;
 		CarParking other = (CarParking) obj;
-		return Objects.equals(colour, other.colour) && id == other.id && Objects.equals(make, other.make)
+		return Objects.equals(colour, other.colour) && Objects.equals(make, other.make)
 				&& Objects.equals(model, other.model) && Objects.equals(number_plate, other.number_plate)
 				&& paid == other.paid && Float.floatToIntBits(price) == Float.floatToIntBits(other.price);
 	}
@@ -150,7 +150,8 @@ public class CarParking {
 	
 	
 	
-	
+
+
 	
 
 }

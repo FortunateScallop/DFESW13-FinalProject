@@ -27,6 +27,9 @@ import org.springframework.test.web.servlet.ResultMatcher;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.qa.finalProject.model.CarParking;
 
+import nl.jqno.equalsverifier.EqualsVerifier;
+import nl.jqno.equalsverifier.Warning;
+
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
 @ActiveProfiles("dev")
@@ -125,6 +128,13 @@ public class ControllerTest {
 		
 		
 	}
-		
+	
+	@Test
+	public void equalsContract() {
+	    EqualsVerifier.forClass(CarParking.class).usingGetClass().verify();
+	}
+
+
+	
 		
 }
