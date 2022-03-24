@@ -38,12 +38,12 @@ public class ServiceDB {
 	}
 	// Remove Entry by ID
 	public boolean deleteById(long id) {
-		repo.deleteById(id);
-		return true;
+		this.repo.deleteById(id);
+		return !this.repo.existsById(id);
 	}
 	// Remove All Entries
 	public boolean deleteAll() {
-		repo.deleteAll();
+		this.repo.deleteAll();
 		return true;
 	}
 	// Update Entry by ID

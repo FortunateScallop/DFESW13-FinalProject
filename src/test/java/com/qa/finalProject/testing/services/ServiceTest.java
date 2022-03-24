@@ -95,10 +95,10 @@ public class ServiceTest {
 		Long id = 1l;
 		Optional<CarParking> toBeDeleted = Optional.of(testSessionOut);
 		boolean result =
-		Mockito.when(repo.findById(id)).thenReturn(toBeDeleted) != null;
+		Mockito.when(this.repo.findById(id)).thenReturn(toBeDeleted) != null;
 		
 		Assertions.assertTrue(result);
-		//assertThat(this.service.deleteById(id)).isEqualTo(testSessionOut);
+		assertThat(service.deleteById(id)).isTrue();
 		
 		
 		
@@ -108,25 +108,15 @@ public class ServiceTest {
 	public void testDeleteAll() {
 		Long id = 1l;
 		boolean result = 
-		Mockito.when(repo.existsById(id)).thenReturn(false) != null;
+		Mockito.when(this.repo.existsById(id)).thenReturn(false) != null;
 		Assertions.assertTrue(result);
-		//assertThat(this.service.deleteAll()).isEqualTo(testSessionOut);
+		assertThat(service.deleteAll()).isTrue();
 		
 		
 	}
 	@Test
 	public void testUpdateEntry() {
-		
-		
-		/*Mockito.when(repo.findById((long) 1)).thenReturn(Optional.of(testSessionID1));
-		CarParking result = service.findById(1);
-		result.setNumber_plate("updated");
-		repo.save(result);
-		CarParking updatedResult = service.findById(1);
-		Assertions.assertEquals(updatedResult, result);
-	}*/
-				
-		//Long id = 1l;
+
 		Mockito.when(repo.findById((long) 1)).thenReturn(Optional.of(testSessionOut));
 		CarParking sessionToUpdate = service.findById(1);
 		sessionToUpdate.setNumber_plate("updated");

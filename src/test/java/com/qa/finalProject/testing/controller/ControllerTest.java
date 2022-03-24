@@ -96,6 +96,35 @@ public class ControllerTest {
 
 		
 	}
+	
+	@Test
+	public void testDeleteById() throws Exception{
+		RequestBuilder req = delete("/deleteId/1");		
+		ResultMatcher checkStatus = status().isAccepted();
+		ResultMatcher checkBody = content().string("Session: 1 ended.");
+		mvc.perform(req).andExpect(checkStatus).andExpect(checkBody); 
+	}
+	@Test
+	public void testDeleteAll() throws Exception{
+		RequestBuilder req = delete("/deleteAll");		
+		ResultMatcher checkStatus = status().isAccepted();
+		ResultMatcher checkBody = content().string("All sessions removed.");
+		mvc.perform(req).andExpect(checkStatus).andExpect(checkBody); 
+	}
+	@Test
+	public void testUpdate() throws Exception{
+		CarParking updatedSession = new CarParking("test_plate2", "test_make2", "test_model2", "test_colour2", 222f, false);
+		String updatedSessionJson = mapper.writeValueAsString(updatedSession);
+		
+		RequestBuilder req = put("/updateId/1").contentType(MediaType.APPLICATION_JSON).content(updatedSessionJson);
+		ResultMatcher checkStatus = status().isOk();
+		ResultMatcher checkBody = content().string("Session 1 updated to " + updatedSession + ".");
+
+		// ASSERT
+		mvc.perform(req).andExpect(checkStatus).andExpect(checkBody);	
+		
+		
+	}
 		
 		
 }
