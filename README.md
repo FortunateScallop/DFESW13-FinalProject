@@ -49,7 +49,7 @@ Moving to the database is something I'd like to have happen when the paid column
 Below is a diagram of the intended relationship between the car_parking and completed_sessions databases.
 
 ### Entity Relationship Diagram 
-[Imgur](https://imgur.com/Rkb5xsK)
+![Imgur](https://imgur.com/Rkb5xsK)
 
 ### User Stories
 
