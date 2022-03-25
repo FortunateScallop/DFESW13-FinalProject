@@ -19,10 +19,10 @@
 The aims of this project were to gain practical experience with and demonstrate understanding of the tools learned over the past 9 weeks to create a working application.
 These tools were Java, MySQL, Postman, Spring Boot API, Maven, JUnit, Jira/Trello, and draw.io.
 
-This project is an attempt to satisfy the requirements of the QA Software Development bootcamp by creating a Java back-end for a that can create, read, update, and delete data from a database.
+This project is an attempt to satisfy the requirements of the QA Software Development bootcamp by creating a Java back-end that can create, read, update, and delete data from a database.
 The project itself is aiming to be an MVP to manage a paid car park with a view to later automation.
 
-My aim was to create the basic functionality first and look at more complex targets such as using a relational database for compelted sessions and time-stamping sessions when they are created and also ended.
+My aim was to create the basic functionality first and look at more complex targets such as using a related database for completed sessions and time-stamping sessions when they are created and ended.
 The data persists on a local MySQL database.  H2 was used for testing.
 
 ### How I expected the challenge to go.
@@ -42,9 +42,9 @@ If I were to do this again I would create a branch for each feature.
 ### Possible improvements for future revisions of the project.
 
 I may implement a basic front-end into this project in the future providing I learn how to do that first.
-The remaining core-functionality I would like to implement would be a second, related database where completed/paid for sessions would me automatically moved to.
-I would also like to add date started and date ended fields that would be time-stamped when a sessions is created and then when it is moved to the relationed database.
-Moving to the database is something I'd like to have happen when the paid column = true.
+The remaining core-functionality I would like to implement would customer queries, and a second, related database where completed/paid for sessions would me automatically moved to.
+I would also like to add date started and date ended fields that would be time-stamped when a sessions is created and then when it is moved to the relatied database.
+Moving to the database is something I'd like to have happen when the paid column is changed to true.
 
 Below is a diagram of the intended relationship between the car_parking and completed_sessions databases.
 
