@@ -117,7 +117,7 @@ These tests include tests for Equals and Hashcode.
 
 ## 4. Data Persisting
 
-Examples of the data from the CRUD functions persisting on a locally hosted SQL databse are viewable in the Images folder.
+Examples of the data from the CRUD functions persisting on a locally hosted SQL database are viewable in the Images folder.
 H2 Database was used during testing and truncated before and after tests were run.
 
 ## 5. Running
