@@ -49,7 +49,7 @@ Moving to the database is something I'd like to have happen when the paid column
 Below is a diagram of the intended relationship between the car_parking and completed_sessions databases.
 
 ### Entity Relationship Diagram 
-![Imgur](https://imgur.com/Rkb5xsK)
+[ERD Diagram](https://imgur.com/Rkb5xsK)
 
 ### User Stories
 
@@ -59,7 +59,7 @@ https://jbolt.atlassian.net/jira/software/projects/JDF/boards/2
 
 ### Risk Assessment 
 
-![Risk](https://imgur.com/HsqQhUX)
+[Risk Assesment](https://imgur.com/HsqQhUX)
 
 ### Git
   
@@ -74,46 +74,47 @@ Postman was used to test the basic CRUD functionality of this project.  Data was
   
 This Postman request creates a new parking session and confirms that to the user:  
   
-![create](https://imgur.com/llun0bb)
+[Create](https://imgur.com/llun0bb)
   
 The data persists on the database thus:
   
-![createpersist](https://imgur.com/JavkbUW)
+[CreatePersisting](https://imgur.com/JavkbUW)
   
 ### Read
   
 These Postman requests read a specific session or all sessions:
   
 Read by ID:
-![readid](https://imgur.com/MPCwPWD)
+[ReadById](https://imgur.com/MPCwPWD)
   
 Read All:
-![readall](https://imgur.com/iOHkxv9)
+[ReadAll](https://imgur.com/iOHkxv9)
 
 ### Update
 
 This request will update a specific entry providing the user provides the ID of the entry they wish to update:
-![update](https://imgur.com/lmq5Dm9)
+[Update](https://imgur.com/lmq5Dm9)
 
 Below is an example of the completed update request:
-![update](https://imgur.com/z269uVj)
+[Updated](https://imgur.com/z269uVj)
 
 ### Delete
 
 The below functions will remove a chosen entry from the database or remove all entries depending on user preference:
 
 Delete by ID:
-![deletebyid](https://imgur.com/m7zaf9C)
+[DeleteByID](https://imgur.com/m7zaf9C)
 
 Delete All:
-![deleteall](https://imgur.com/wjQQB1p)
+[DeleteAll](https://imgur.com/wjQQB1p)
   
   
 ## 3. Testing
 
 Please see below for the coverage of the tests written for this application:
-![testing](https://imgur.com/RKXSQbw)
+[Coverage](https://imgur.com/RKXSQbw)
 These tests include tests for Equals and Hashcode.  
+
 ## 4. Data Persisting
 
 Examples of the data from the CRUD functions persisting on a locally hosted SQL databse are viewable in the Images folder.
