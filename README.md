@@ -49,11 +49,7 @@ Moving to the database is something I'd like to have happen when the paid column
 Below is a diagram of the intended relationship between the car_parking and completed_sessions databases.
 
 ### Entity Relationship Diagram 
-
-Although out of scope for the project, a suggestion of a second database has been added which would synergise with the original.
-This would include stats for each NPC in the database. Ideally I would have set this up to provide randomised stats for strength, wisdow and dexterity between 1-10.
-
-![ERD](https://imgur.com/Rkb5xsK)
+[Imgur](https://imgur.com/Rkb5xsK)
 
 ### User Stories
 
